@@ -1,0 +1,70 @@
+---
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: My API Spec
+paths:
+  /animals:
+    get:
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ZooAnimal"
+                
+    post:
+      requestBody:
+        description: description
+        content: 
+          "application/json":
+            schema:
+              $ref: "#/components/schemas/ZooAnimal"            
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ZooAnimal"
+
+components:
+
+  schemas:
+    
+    ConservationStatus:
+      type: string
+      enum: 
+       - Least Concern
+       - Near Threatened
+       - Vulnerable
+       - Endangered
+       - Critically Endangered
+       - Extinct in the Wild
+       - Extinct
+       - Data Deficient
+       - Not Evaluated
+
+    ZooAnimal:
+      type: object
+      properties:
+        id: 
+          type: string
+        name: 
+          type: string
+        conservationStatus:
+          $ref: "#/components/schemas/ConservationStatus"
+        image: # ? imageURL
+          type: string
+        age: 
+          type: integer
+          
+    # https://nationalzoo.si.edu/animals/bobcat
+    Bobcat:
+      allOf:
+        - $ref: "#/components/schemas/ZooAnimal"
+        - type: object
+          properties:
+            foo:
+              type: string     
