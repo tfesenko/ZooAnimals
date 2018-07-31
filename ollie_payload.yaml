@@ -1,0 +1,9 @@
+id: ollieTheBobcat
+name: Ollie
+conservationStatus: "Least Concern"
+favoriteFood: 
+ - Rabbit
+ - Flamingo
+speed: 30
+purr: 
+    - "birdlike chirps"
