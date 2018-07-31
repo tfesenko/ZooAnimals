@@ -1,0 +1,1 @@
+[ZooAnimal|id:string; name: string], [Mammal|favoriteFood: Object*; speed:number]^-[Bobcat| purr: String*], [ZooAnimal]^-[Bobcat]
