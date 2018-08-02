@@ -1,1 +1,11 @@
 [ZooAnimal|id:string; name: string], [Mammal|favoriteFood: Object*; speed:number]^-[Bobcat| purr: String*], [ZooAnimal]^-[Bobcat]
+
+ZooAnimal and Bobcat
+[ZooAnimal|id:string; name: string; favoriteFood: Object*]^-[Bobcat| speed:number; purr: String*]
+
+Bobcat
+[Bobcat|id:string; name: string; favoriteFood: Object*; runningSpeed:number; purr: String]
+
+
+ZooAnimal, Bobcat, Dragon
+[ZooAnimal|id:string; name: string; favoriteFood: Object*]^-[ComodoDragon| swimmingSpeed:number], [ZooAnimal]^-[Bobcat| runningSpeed:number; purr: String]
