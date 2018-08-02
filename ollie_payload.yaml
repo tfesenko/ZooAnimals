@@ -1,9 +1,21 @@
-id: ollieTheBobcat
+
+id: OllieTheBobcat
 name: Ollie
-conservationStatus: "Least Concern"
 favoriteFood: 
  - Rabbit
  - Flamingo
-speed: 30
-purr: 
-    - "birdlike chirps"
+runningSpeed: 30
+purr: "birdlike chirps"
+    
+    
+    
+id: MurphyTheKomodoDragon
+name: Murphy
+favoriteFood: 
+ - Boars
+ - Deer
+swimmingSpeed: 13
+
+
+
+
