@@ -6,6 +6,9 @@ ZooAnimal and Bobcat
 Bobcat
 [Bobcat|id:string; name: string; favoriteFood: Object*; runningSpeed:number; purr: String]
 
+KomodoDragon
+[KomodoDragon|id:string; name: string; favoriteFood: Object*; swimmingSpeed:number]
+
 
 ZooAnimal, Bobcat, Dragon
-[ZooAnimal|id:string; name: string; favoriteFood: Object*]^-[ComodoDragon| swimmingSpeed:number], [ZooAnimal]^-[Bobcat| runningSpeed:number; purr: String]
+[ZooAnimal|id:string; name: string; favoriteFood: Object*]^-[KomodoDragon| swimmingSpeed:number], [ZooAnimal]^-[Bobcat| runningSpeed:number; purr: String]
